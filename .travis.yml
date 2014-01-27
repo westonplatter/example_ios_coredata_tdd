@@ -8,4 +8,4 @@ install:
   - brew install xctool --HEAD
 
 script:
-  - xctool build test -project TodoList.xcodeproj -scheme TodoList -sdk iphonesimulator
+  - xctool -project TodoList.xcodeproj -scheme TodoList -sdk iphonesimulator build test
