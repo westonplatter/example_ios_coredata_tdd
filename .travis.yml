@@ -2,3 +2,10 @@ language: objective-c
 
 xcode_project: TodoList.xcodeproj
 xcode_scheme: TodoList
+
+install:
+  - brew remove --force xctool
+  - brew install xctool --HEAD
+
+script:
+  - xctool build test -project TodoList.xcodeproj -scheme TodoList -sdk iphonesimulator
