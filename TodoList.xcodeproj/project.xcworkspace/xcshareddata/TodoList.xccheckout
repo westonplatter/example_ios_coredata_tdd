@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>42663536-475E-4ED7-8E38-B6293689FAF4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TodoList</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EEB1A2CE-F246-4C4D-9B5F-F51055D604B4</key>
+		<string>ssh://github.com/westonplatter/example_ios_coredata_tdd.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TodoList.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EEB1A2CE-F246-4C4D-9B5F-F51055D604B4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/westonplatter/example_ios_coredata_tdd.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EEB1A2CE-F246-4C4D-9B5F-F51055D604B4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EEB1A2CE-F246-4C4D-9B5F-F51055D604B4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TodoList</string>
+		</dict>
+	</array>
+</dict>
+</plist>

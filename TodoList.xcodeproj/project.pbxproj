@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD563226189845D00032567C /* UserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD563225189845D00032567C /* UserTests.m */; };
+		AD5632281898468E0032567C /* TodoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5632271898468E0032567C /* TodoTests.m */; };
+		AD56322B189847A50032567C /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AD56322A189847A50032567C /* CoreDataHelper.m */; };
 		AD6F99F7189703A4000F2126 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6F99F6189703A4000F2126 /* Foundation.framework */; };
 		AD6F99F9189703A4000F2126 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6F99F8189703A4000F2126 /* CoreGraphics.framework */; };
 		AD6F99FB189703A4000F2126 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6F99FA189703A4000F2126 /* UIKit.framework */; };
@@ -25,7 +28,7 @@
 		AD6F9A23189703A4000F2126 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6F99FA189703A4000F2126 /* UIKit.framework */; };
 		AD6F9A24189703A4000F2126 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6F99FC189703A4000F2126 /* CoreData.framework */; };
 		AD6F9A2C189703A4000F2126 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD6F9A2A189703A4000F2126 /* InfoPlist.strings */; };
-		AD6F9A2E189703A4000F2126 /* TodoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6F9A2D189703A4000F2126 /* TodoListTests.m */; };
+		AD8F2BB418984B6200C43C87 /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8F2BB318984B6200C43C87 /* Todo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD563225189845D00032567C /* UserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTests.m; sourceTree = "<group>"; };
+		AD5632271898468E0032567C /* TodoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoTests.m; sourceTree = "<group>"; };
+		AD563229189847A50032567C /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
+		AD56322A189847A50032567C /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
 		AD6F99F3189703A4000F2126 /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6F99F6189703A4000F2126 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AD6F99F8189703A4000F2126 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,7 +69,8 @@
 		AD6F9A20189703A4000F2126 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		AD6F9A29189703A4000F2126 /* TodoListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TodoListTests-Info.plist"; sourceTree = "<group>"; };
 		AD6F9A2B189703A4000F2126 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AD6F9A2D189703A4000F2126 /* TodoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoListTests.m; sourceTree = "<group>"; };
+		AD8F2BB218984B6200C43C87 /* Todo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo.h; sourceTree = "<group>"; };
+		AD8F2BB318984B6200C43C87 /* Todo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +133,7 @@
 		AD6F99FE189703A4000F2126 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				AD8F2BAA18984A7B00C43C87 /* Models */,
 				AD6F9A07189703A4000F2126 /* AppDelegate.h */,
 				AD6F9A08189703A4000F2126 /* AppDelegate.m */,
 				AD6F9A0A189703A4000F2126 /* Main_iPhone.storyboard */,
@@ -154,7 +163,7 @@
 		AD6F9A27189703A4000F2126 /* TodoListTests */ = {
 			isa = PBXGroup;
 			children = (
-				AD6F9A2D189703A4000F2126 /* TodoListTests.m */,
+				AD8F2BAB18984A8500C43C87 /* Models */,
 				AD6F9A28189703A4000F2126 /* Supporting Files */,
 			);
 			path = TodoListTests;
@@ -163,10 +172,30 @@
 		AD6F9A28189703A4000F2126 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AD563229189847A50032567C /* CoreDataHelper.h */,
+				AD56322A189847A50032567C /* CoreDataHelper.m */,
 				AD6F9A29189703A4000F2126 /* TodoListTests-Info.plist */,
 				AD6F9A2A189703A4000F2126 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD8F2BAA18984A7B00C43C87 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD8F2BB218984B6200C43C87 /* Todo.h */,
+				AD8F2BB318984B6200C43C87 /* Todo.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AD8F2BAB18984A8500C43C87 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD563225189845D00032567C /* UserTests.m */,
+				AD5632271898468E0032567C /* TodoTests.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD6F9A18189703A4000F2126 /* DetailViewController.m in Sources */,
+				AD8F2BB418984B6200C43C87 /* Todo.m in Sources */,
 				AD6F9A15189703A4000F2126 /* MasterViewController.m in Sources */,
 				AD6F9A09189703A4000F2126 /* AppDelegate.m in Sources */,
 				AD6F9A05189703A4000F2126 /* main.m in Sources */,
@@ -279,7 +309,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD6F9A2E189703A4000F2126 /* TodoListTests.m in Sources */,
+				AD5632281898468E0032567C /* TodoTests.m in Sources */,
+				AD563226189845D00032567C /* UserTests.m in Sources */,
+				AD56322B189847A50032567C /* CoreDataHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +522,7 @@
 				AD6F9A33189703A4000F2126 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD6F9A34189703A4000F2126 /* Build configuration list for PBXNativeTarget "TodoListTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +531,7 @@
 				AD6F9A36189703A4000F2126 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
