@@ -9,10 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+@class User;
 
 @interface Todo : NSManagedObject
 
-@property (nonatomic, retain) NSString * action;
-@property (nonatomic, retain) NSString * state;
+@property (nonatomic, retain) NSString *action;
+@property (nonatomic, retain) NSString *state;
+@property (nonatomic, retain) User *user;
 
 @end

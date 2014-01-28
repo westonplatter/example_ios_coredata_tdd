@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "CoreDataHelper.h"
 #import "Todo.h"
+#import "User.h"
 
 @interface TodoTests: XCTestCase
 @property (nonatomic,retain) NSManagedObjectContext *moc;
@@ -34,12 +35,13 @@
     Todo *todo = [NSEntityDescription insertNewObjectForEntityForName:@"Todo" inManagedObjectContext:self.moc];
     
     [todo setAction:@"create todo TDD app"];
+    [todo setState:@"started"];
     
     NSError *error = nil;
     BOOL result = [self.moc save:&error];
 
     XCTAssertNil(error, @"save should not raise errors");
-    XCTAssertTrue(result, @"make the test pass to test Travis CI");
+    XCTAssertTrue(result, @"save operation should be true");
 }
 
 @end

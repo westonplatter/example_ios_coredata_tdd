@@ -29,6 +29,7 @@
 		AD6F9A24189703A4000F2126 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6F99FC189703A4000F2126 /* CoreData.framework */; };
 		AD6F9A2C189703A4000F2126 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD6F9A2A189703A4000F2126 /* InfoPlist.strings */; };
 		AD8F2BB418984B6200C43C87 /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8F2BB318984B6200C43C87 /* Todo.m */; };
+		AD8F2BB7189855C800C43C87 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8F2BB6189855C800C43C87 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		AD6F9A2B189703A4000F2126 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AD8F2BB218984B6200C43C87 /* Todo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo.h; sourceTree = "<group>"; };
 		AD8F2BB318984B6200C43C87 /* Todo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo.m; sourceTree = "<group>"; };
+		AD8F2BB5189855C800C43C87 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		AD8F2BB6189855C800C43C87 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +188,8 @@
 			children = (
 				AD8F2BB218984B6200C43C87 /* Todo.h */,
 				AD8F2BB318984B6200C43C87 /* Todo.m */,
+				AD8F2BB5189855C800C43C87 /* User.h */,
+				AD8F2BB6189855C800C43C87 /* User.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD6F9A18189703A4000F2126 /* DetailViewController.m in Sources */,
+				AD8F2BB7189855C800C43C87 /* User.m in Sources */,
 				AD8F2BB418984B6200C43C87 /* Todo.m in Sources */,
 				AD6F9A15189703A4000F2126 /* MasterViewController.m in Sources */,
 				AD6F9A09189703A4000F2126 /* AppDelegate.m in Sources */,
