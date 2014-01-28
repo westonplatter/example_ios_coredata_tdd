@@ -21,7 +21,12 @@ NSManagedObjectContext *testingContext;
     NSPersistentStoreCoordinator *psc = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:mom];
     
     // tell PersistentCoordinator to use In Memoery DB to make tests faster
-    [psc addPersistentStoreWithType:NSInMemoryStoreType configuration:nil URL:nil options:nil error:NULL];
+    [psc
+        addPersistentStoreWithType:NSInMemoryStoreType
+        configuration:nil
+        URL:nil
+        options:nil
+        error:NULL];
     
     // return instantiated `testingContext` if instantiated
     if (testingContext != nil) {
@@ -35,7 +40,7 @@ NSManagedObjectContext *testingContext;
     testingContext.persistentStoreCoordinator = psc;
     
     // should only run once
-    // NSLog(@"\n\n\n==>> should only run once\n\n\n");
+    NSLog(@"\n\n\n==>> should only run once\n\n\n");
     
     return testingContext;
 }
