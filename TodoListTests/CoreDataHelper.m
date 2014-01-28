@@ -28,10 +28,13 @@ NSManagedObjectContext *testingContext;
         options:nil
         error:NULL];
     
+    // Comment this out so that we get a new context for each test.
+    // Caused erorrs for testRelationshipUserTodos
+    //
     // return instantiated `testingContext` if instantiated
-    if (testingContext != nil) {
-        return testingContext;
-    }
+    // if (testingContext != nil) {
+    //     return testingContext;
+    // }
     
     // alloc ManagedObjectContext
     testingContext = [[NSManagedObjectContext alloc] init];
@@ -39,8 +42,11 @@ NSManagedObjectContext *testingContext;
     // tell Context to rely on In Memeory Coordinator
     testingContext.persistentStoreCoordinator = psc;
     
+    // This acutally runs multiple times since we're creating a
+    // new context for each test.
+    //
     // should only run once
-    NSLog(@"\n\n\n==>> should only run once\n\n\n");
+    // NSLog(@"\n\n\n==>> should only run once\n\n\n");
     
     return testingContext;
 }

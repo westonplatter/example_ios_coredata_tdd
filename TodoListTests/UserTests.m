@@ -55,7 +55,7 @@
     Todo *todo_1 = [NSEntityDescription insertNewObjectForEntityForName:@"Todo" inManagedObjectContext:self.moc];
     [todo_1 setAction:@"first"];
     [todo_1 setUser:user];
-
+    
     Todo *todo_2 = [NSEntityDescription insertNewObjectForEntityForName:@"Todo" inManagedObjectContext:self.moc];
     [todo_2 setAction:@"second"];
     [todo_2 setUser:user];
@@ -77,7 +77,7 @@
     
     NSObject *fetchedUser = [fetchedObjects firstObject];
     NSArray *todos = [fetchedUser valueForKey:@"todos"];
-    XCTAssert([todos count] == 2, @"user should have 2 todos");
+    XCTAssertTrue([todos count] == 2, @"user should have 2 todos");
 }
 
 @end
