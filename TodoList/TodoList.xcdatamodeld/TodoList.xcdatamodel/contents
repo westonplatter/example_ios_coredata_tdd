@@ -16,7 +16,7 @@
     </entity>
     <entity name="User" representedClassName="User" syncable="YES">
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="todos" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Todo" inverseName="user" inverseEntity="Todo" syncable="YES"/>
+        <relationship name="todos" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Todo" inverseName="user" inverseEntity="Todo" syncable="YES"/>
     </entity>
     <elements>
         <element name="Event" positionX="0" positionY="0" width="0" height="0"/>
