@@ -30,6 +30,8 @@
 		AD6F9A2C189703A4000F2126 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD6F9A2A189703A4000F2126 /* InfoPlist.strings */; };
 		AD8F2BB418984B6200C43C87 /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8F2BB318984B6200C43C87 /* Todo.m */; };
 		AD8F2BB7189855C800C43C87 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8F2BB6189855C800C43C87 /* User.m */; };
+		ADED272A18987DF200307DB6 /* Director.m in Sources */ = {isa = PBXBuildFile; fileRef = ADED272918987DF200307DB6 /* Director.m */; };
+		ADED272E18987E5300307DB6 /* DirectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADED272D18987E5300307DB6 /* DirectorTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,9 @@
 		AD8F2BB318984B6200C43C87 /* Todo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo.m; sourceTree = "<group>"; };
 		AD8F2BB5189855C800C43C87 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		AD8F2BB6189855C800C43C87 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		ADED272818987DF200307DB6 /* Director.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Director.h; sourceTree = "<group>"; };
+		ADED272918987DF200307DB6 /* Director.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Director.m; sourceTree = "<group>"; };
+		ADED272D18987E5300307DB6 /* DirectorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +195,8 @@
 				AD8F2BB318984B6200C43C87 /* Todo.m */,
 				AD8F2BB5189855C800C43C87 /* User.h */,
 				AD8F2BB6189855C800C43C87 /* User.m */,
+				ADED272818987DF200307DB6 /* Director.h */,
+				ADED272918987DF200307DB6 /* Director.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -199,6 +206,7 @@
 			children = (
 				AD563225189845D00032567C /* UserTests.m */,
 				AD5632271898468E0032567C /* TodoTests.m */,
+				ADED272D18987E5300307DB6 /* DirectorTests.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -302,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD6F9A18189703A4000F2126 /* DetailViewController.m in Sources */,
+				ADED272A18987DF200307DB6 /* Director.m in Sources */,
 				AD8F2BB7189855C800C43C87 /* User.m in Sources */,
 				AD8F2BB418984B6200C43C87 /* Todo.m in Sources */,
 				AD6F9A15189703A4000F2126 /* MasterViewController.m in Sources */,
@@ -316,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD5632281898468E0032567C /* TodoTests.m in Sources */,
+				ADED272E18987E5300307DB6 /* DirectorTests.m in Sources */,
 				AD563226189845D00032567C /* UserTests.m in Sources */,
 				AD56322B189847A50032567C /* CoreDataHelper.m in Sources */,
 			);
